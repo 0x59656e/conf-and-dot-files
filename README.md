@@ -1,2 +1,2 @@
-# Just another repository for managing configuration/dot files.
+# Just a repository for managing configuration/dot files.
 
