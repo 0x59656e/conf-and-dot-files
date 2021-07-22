@@ -23,6 +23,7 @@ alias tnew='tmux new -s '
 alias ta='tmux attach -t '
 alias tkill='tmux kill-session -t '
 alias colors='for i in {0..255}; do  printf "\x1b[38;5;${i}mcolor%-5i\x1b[0m" $i ; if ! (( ($i + 1 ) % 8 )); then echo ; fi ; done'
+alias clean_branch='git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
