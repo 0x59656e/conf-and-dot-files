@@ -31,7 +31,7 @@ alias colors='for i in {0..255}; do  printf "\x1b[38;5;${i}mcolor%-5i\x1b[0m" $i
 alias how='cht.sh'
 alias myip='curl myip.ipip.net'
 alias clean_branch='git for-each-ref --format '\''%(refname:short)'\'' refs/heads | grep -v master | xargs git branch -D'
-
+alias dld='http --download '
 # Source global definitions
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
