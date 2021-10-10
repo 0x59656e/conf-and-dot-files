@@ -1,5 +1,5 @@
-# k3s
-export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+# Uncomment to enable k3s related config
+# export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 
 # User specific aliases and functions
 alias rm='rm -i'
@@ -14,16 +14,16 @@ alias vibash='vim ~/.bashrc'
 alias now='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias vi='vim'
 alias tnew='tmux new -s '
-alias ta='tmux attach -t '
-alias tkill='tmux kill-session -t '
+#alias ta='tmux attach -t '
+#alias tkill='tmux kill-session -t '
 alias colors='for i in {0..255}; do  printf "\x1b[38;5;${i}mcolor%-5i\x1b[0m" $i ; if ! (( ($i + 1 ) % 8 )); then echo ; fi ; done'
-alias how='cht.sh'
+#alias how='cht.sh'
 alias myip='curl myip.ipip.net'
 alias clean_branch='git for-each-ref --format '\''%(refname:short)'\'' refs/heads | grep -v master | xargs git branch -D'
-alias dload='http --download'
-alias zk-start='cd ~/kafka && ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties'
-alias kafka-start='cd ~/kafka && ./bin/kafka-server-start.sh -daemon config/server.properties'
-alias elastic-start='cd ~/elasticsearch/ && ./bin/elasticsearch -d'
+alias download='http --download'
+#alias zk-start='cd ~/kafka && ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties'
+#alias kafka-start='cd ~/kafka && ./bin/kafka-server-start.sh -daemon config/server.properties'
+#alias elastic-start='cd ~/elasticsearch/ && ./bin/elasticsearch -d'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
