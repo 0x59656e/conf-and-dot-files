@@ -1,0 +1,20 @@
+# Logging
+LogLevel INFO
+
+# Authentication:
+LoginGraceTime 1m
+PermitRootLogin no
+MaxAuthTries 5
+MaxSessions 10
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+KbdInteractiveAuthentication no
+UsePAM yes
+PrintMotd no
+PrintLastLog no
+TCPKeepAlive no
+
+# Misc.
+AddressFamily inet
+Banner none
