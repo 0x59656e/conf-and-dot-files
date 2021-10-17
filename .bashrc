@@ -26,6 +26,9 @@ alias download='http --download'
 #alias kafka-start='cd ~/kafka && ./bin/kafka-server-start.sh -daemon config/server.properties'
 #alias elastic-start='cd ~/elasticsearch/ && ./bin/elasticsearch -d'
 
+# ONLY ROOT USER CAN COMMENT OUT THE FOLLOWING LINE
+#ulimit -u unlimited
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
