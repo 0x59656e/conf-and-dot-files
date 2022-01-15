@@ -19,15 +19,14 @@ alias colors='for i in {0..255}; do  printf "\x1b[38;5;${i}mcolor%-5i\x1b[0m" $i
 alias myip='curl myip.ipip.net'
 alias clean_branch='git for-each-ref --format '\''%(refname:short)'\'' refs/heads | grep -v master | xargs git branch -D'
 alias download='http --download'
-#alias how='cht.sh'
 #alias ta='tmux attach -t '
 #alias tkill='tmux kill-session -t '
 #alias zk-start='cd ~/kafka && ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties'
 #alias kafka-start='cd ~/kafka && ./bin/kafka-server-start.sh -daemon config/server.properties'
 #alias elastic-start='cd ~/elasticsearch/ && ./bin/elasticsearch -d'
 
-# ONLY ROOT USER CAN COMMENT OUT THE FOLLOWING LINE
-#ulimit -u unlimited
+# ROOT USER ONLY
+ulimit -u unlimited
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
