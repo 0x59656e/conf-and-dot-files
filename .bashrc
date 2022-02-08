@@ -1,7 +1,10 @@
 # Uncomment to enable k3s related config
 # export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+export PROXY=''
+export PROXY_PORT=''
 
 # Common Alias 
+alias sudo='sudo '
 alias rm='rm -i'
 alias cp='rsync -avzhP'
 alias mv='mv -i'
@@ -22,6 +25,7 @@ alias download='http --download'
 alias tnew='tmux new -s '
 alias ta='tmux attach -t '
 alias tkill='tmux kill-session -t '
+
 
 # ROOT USER ONLY
 ulimit -u unlimited
