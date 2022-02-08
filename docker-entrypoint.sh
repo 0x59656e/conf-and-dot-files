@@ -14,14 +14,14 @@ log() {
 }
 
 note() {
-    mysql_log Note "$@"
+    log Note "$@"
 }
 
 warn() {
-    mysql_log Warn "$@" >&2
+    log Warn "$@" >&2
 }
 
 error() {
-    mysql_log ERROR "$@" >&2
+    log ERROR "$@" >&2
     exit 1
 }
